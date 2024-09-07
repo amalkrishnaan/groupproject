@@ -1,23 +1,22 @@
-document.getElementById('addStudentForm').addEventListener('submit', function (e) {
-    e.preventDefault();
+document.getElementById('addStudentForm').addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    const name = document.getElementById('name').value;
-    const rollNumber = document.getElementById('rollNumber').value;
-    const chemistry = document.getElementById('chemistry').value;
-    const physics = document.getElementById('physics').value;
-    const maths = document.getElementById('maths').value;
+  let studentName = document.getElementById('studentName').value;
+  let rollNumber = document.getElementById('rollNumber').value;
+  let chemistryMarks = document.getElementById('chemistryMarks').value;
+  let physicsMarks = document.getElementById('physicsMarks').value;
+  let mathsMarks = document.getElementById('mathsMarks').value;
 
-    let students = JSON.parse(localStorage.getItem('students')) || [];
+  let students = JSON.parse(localStorage.getItem('students')) || [];
 
-    const isDuplicate = students.some(student => student.rollNumber === rollNumber);
+  let studentExists = students.some(student => student.rollNumber === rollNumber);
 
-    if (isDuplicate) {
-      document.getElementById('duplicateAlert').style.display = 'block';
-    } else {
-      students.push({ name, rollNumber, chemistry, physics, maths });
+  if (studentExists) {
+    document.getElementById('notificationBar').style.display = 'block';
+  } else {
+    students.push({ name: studentName, rollNumber, chemistry: chemistryMarks, physics: physicsMarks, maths: mathsMarks });
+    localStorage.setItem('students', JSON.stringify(students));
 
-      localStorage.setItem('students', JSON.stringify(students));
-
-      window.location.href = '../index.html';
-    }
-  });
+    window.location.href = '../index.html';
+  }
+});
