@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projecttable</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+        <div class="logo">
+            <a href="../index.html"><img src="../images/kindpng_4375653.png" alt=""></a>
+        </div>
+        <div class="brandname"><h2>MY BRAND</h2></div>
+    </div>
+       
+    </div>
+    <div class="container-add">
+        <form id="employeeForm" class="form">
+            <label for="empId">Employee ID:</label>
+            <input type="text" id="empId" class="form-input" readonly>
+            <small id="empIdError" class="error"></small>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" class="form-input" required>
+            <small id="nameError" class="error"></small>
+
+            <label for="designation">Designation:</label>
+            <input type="text" id="designation" class="form-input" required>
+            <small id="designationError" class="error"></small>
+
+            <label for="salary">Salary:</label>
+            <select id="salary" class="form-select" required>
+                <option value="">Select Salary</option>
+                <option value="30000">Rs30,000</option>
+                <option value="40000">Rs40,000</option>
+                <option value="50000">Rs50,000</option>
+                <option value="60000">Rs60,000</option>
+                <option value="70000">Rs70,000</option>
+            </select>
+            <small id="salaryError" class="error"></small>
+
+            <label for="experience">Experience:</label>
+            <select id="experience" class="form-select" required>
+                <option value="">Select Experience</option>
+                <option value="0">0 years</option>
+                <option value="1">1 year</option>
+                <option value="2">2 years</option>
+                <option value="3">3 years</option>
+                <option value="4">4 years</option>
+                <option value="5">5 years</option>
+            </select>
+            <small id="experienceError" class="error"></small>
+            <button type="submit" class="form-button">Save Changes</button>
+        </form>
+    </div>
+    <SCRIPT src="../js/edit.js"></SCRIPT>
+</body>
+</html>

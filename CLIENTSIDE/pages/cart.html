@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projecttable</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="left">
+        <div class="brandname"><h2>STUDENT DETAILS</h2></div>
+    </div>
+       
+    </div>
+    <div class="container-add">
+        <form id="employeeForm" class="form" method="POST" action="/submit">
+            <label for="empId">Student Name</label>
+            <input type="text" id="empId" name="Name" class="form-input" required>
+            <small id="empIdError" class="error"></small>
+
+            <label for="name">Roll Number</label>
+            <input type="number" id="name"  name="rollnumber"class="form-input" required>
+            <small id="nameError" class="error"></small>
+
+            <label for="designation">Chemistry Marks</label>
+            <input type="number" id="designation" name="chem" class="form-input" required>
+            <small id="designationError" class="error"></small>
+
+            <label for="name">Physics Marks</label>
+            <input type="number" id="name" name="phy" class="form-input" required>
+            <small id="nameError" class="error"></small>
+
+            <label for="designation">Maths Marks</label>
+            <input type="number" id="designation" name="maths" class="form-input" required>
+            <small id="designationError" class="error"></small>
+
+
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

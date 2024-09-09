@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav
+{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+.nav-buttons {
+    background-color: #f82302;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-buttons:hover {
+    background-color: #c50a07;
+    transform: scale(1.05);
+}
+.left
+{
+    display: flex;
+    flex-direction: row;
+align-items: center;
+}
+.logo img
+{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+}
+.brandname
+{
+    margin-left: 20px;
+    font-size: 30px;
+}
+.search
+{
+    width: 100%;
+ display: flex;
+ align-items: end;
+ justify-content: end;
+ margin-bottom: 50px;
+}
+.searchbar
+{
+    border-radius: 100px;
+    border: 1px solid black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    margin-right: 20px;
+}
+.search button
+{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    margin-right: 100px;
+}
+.search button:hover{
+    background-color: rgb(26, 105, 26);
+}
+.main
+{
+    width: 100%;
+    height: 90vh;
+    /* background-image: url(../images/pexels-pixabay-531880.jpg); */
+    /* color: white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container {
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.container-add {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.container-edit {
+    max-width: 500px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2em;
+    opacity: 0;
+    animation: fadeInTable 0.5s ease-in forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInTable {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+table th, table td {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #f8f9fa;
+}
+
+table tr {
+    transition: background-color 0.3s;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form label {
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.form-input, .form-select {
+    padding: 0.75em;
+    margin-bottom: 1.5em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    outline: none;
+}
+
+.form-input:focus, .form-select:focus {
+    border-color: #28a745;
+}
+
+.form-button {
+    padding: 0.75em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 140px;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
+.error {
+    color: red;
+    display: none;
+    margin-top: -1em;
+    margin-bottom: 1em;
+}
+.editbtn{
+    background-color: #1f9839;
+    color: white;
+    border-radius: 100px;
+    width: 70px;
+    height: 35px;
+    border: 1px white;
+}
+.editbtn:hover
+{
+    background-color: #0f511d;
+}
+.deletebtn
+{
+    background-color: #1f9839;
+    color: white;
+    border-radius: 100px;
+    width: 70px;
+    height: 35px;
+    border:1px white;
+}
+.deletebtn:hover
+{
+    background-color: #0f511d;
+}
